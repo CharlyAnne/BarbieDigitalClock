@@ -41,3 +41,26 @@ h3 {
   background: #30323b;
   box-shadow: inset 5px 5px 21px #31222f, inset -5px -5px 21px #4d505e;
 }
+.icon-closed {
+  border: none;
+  padding: 8px;
+  background-color: #ff4ebe;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  bottom: 1rem;
+  right: 7rem;
+  transition: transform 1s ease-in-out;
+  transform: translateX(100%);
+}
+/* Hide the chat icon when isOpen is true */
+.hidden {
+  display: none;
+}
+.icon-closed svg {
+  stroke: #000;
+  fill: #fff;
+  stroke-width: 0;
+  height: 2em;
+  width: 2em;
+}
